@@ -22,7 +22,7 @@ wimbledon_winners %>%
   facet_grid(rows = vars(gender)) +
   labs(title = "Age of Wimbledon Winners",
        subtitle = "grouped by player",
-       y = "date")
+       x = "date")
   
 
 ```

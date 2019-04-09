@@ -44,6 +44,12 @@ Version: 1.4
 Hash: bb0bed97e10d3479d02264fa87bf061a
 Requires: backports
 
+Package: callr
+Source: CRAN
+Version: 3.2.0
+Hash: a6f55e383e4a82bf953aa92136c18d58
+Requires: R6, processx
+
 Package: cli
 Source: CRAN
 Version: 1.1.0
@@ -208,6 +214,17 @@ Source: CRAN
 Version: 1.8.4
 Hash: 0ff259c7e21ac20a124869520e209d9f
 Requires: Rcpp
+
+Package: processx
+Source: CRAN
+Version: 3.3.0
+Hash: 89c6047da2d7dfad11bedd624252d78a
+Requires: R6, ps
+
+Package: ps
+Source: CRAN
+Version: 1.3.0
+Hash: 1d4cae95887ffe5b1a22bea5994476cd
 
 Package: purrr
 Source: CRAN
