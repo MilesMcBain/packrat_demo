@@ -1,0 +1,6 @@
+library(drake)
+library(readr)
+library(dplyr)
+library(lubridate)
+library(rmarkdown)
+library(ggplot2)

@@ -1,0 +1,28 @@
+---
+title: "Ages of Wimbledon Winners over Time"
+author: "Miles McBain"
+date: "`r format(Sys.Date())`"
+output: github_document
+---
+
+```{r, setup, echo = FALSE}
+wimbledon_winners <- readd(wimbledon_winners)
+```
+
+# Wimbledon winners by age
+
+It's interesting to see the age ramps while a cohort or single player dominates,
+followed by 'resets' when the guard changes. The Williams Sisters are also a feature. Can you spot them?
+
+```{r}
+wimbledon_winners %>%
+  ggplot(aes(x = tournament_date, y = age, group = name )) +
+  geom_point() +
+  geom_line() +
+  facet_grid(rows = vars(gender)) +
+  labs(title = "Age of Wimbledon Winners",
+       subtitle = "grouped by player",
+       y = "date")
+  
+
+```
